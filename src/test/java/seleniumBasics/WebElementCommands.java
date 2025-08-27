@@ -12,7 +12,9 @@ public class WebElementCommands extends BaseClass {
 		showbutton.click();
 		WebElement yourmessage = driver.findElement(By.id("message-one"));
 		System.out.println(yourmessage.getText());
-		
+		messagebox.clear();
+		System.out.println(showbutton.getTagName());
+		System.out.println(messagebox.getCssValue("border-color"));
 	}
 	
 	
