@@ -1,5 +1,7 @@
 package seleniumBasics;
 
+import java.awt.Checkbox;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -18,6 +20,7 @@ public class HandlingDropDown extends BaseClass {
 		driver.navigate().to("https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 		WebElement check = driver.findElement(By.xpath("//input[@value='option-1']"));
 		check.click();
+		System.out.println(check.isSelected());
 				
 		
 		
@@ -32,8 +35,8 @@ public class HandlingDropDown extends BaseClass {
 		HandlingDropDown dropDown = new HandlingDropDown();
 		dropDown.intialiseBrowser();
 		//dropDown.verifyDropDown();
-		//dropDown.verifyCheckBox();
-		dropDown.verifyRadioButton();
+		dropDown.verifyCheckBox();
+		//dropDown.verifyRadioButton();
 		
 		
 	}

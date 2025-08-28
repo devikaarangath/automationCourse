@@ -9,6 +9,8 @@ public class WebElementCommands extends BaseClass {
 		WebElement messagebox = driver.findElement(By.id("single-input-field"));
 		messagebox.sendKeys("devika");
 		WebElement showbutton = driver.findElement(By.id("button-one"));
+		System.out.println(showbutton.isDisplayed());
+		System.out.println(showbutton.isEnabled());
 		showbutton.click();
 		WebElement yourmessage = driver.findElement(By.id("message-one"));
 		System.out.println(yourmessage.getText());
