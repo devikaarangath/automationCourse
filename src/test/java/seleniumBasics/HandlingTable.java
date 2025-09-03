@@ -7,7 +7,7 @@ public class HandlingTable  extends BaseClass{
 	public void handleTable() {
 		driver.navigate().to("https://money.rediff.com/indices/nse");
 		WebElement table = driver.findElement(By.xpath("//table[@id='dataTable']"));
-		WebElement row = driver.findElement(By.xpath("//table[@id='dataTable']/tbody/tr[3]"));
+		WebElement row = driver.findElement(By.xpath("//table[@id='dataTable']/tbody/tr[4]"));
 		System.out.println(table.getText());
 		System.out.println(row.getText());
 	}
