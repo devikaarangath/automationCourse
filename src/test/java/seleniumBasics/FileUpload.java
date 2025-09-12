@@ -31,13 +31,13 @@ public class FileUpload {
 		WebElement attach = driver.findElement(By.xpath("//a[@id='pickfiles']"));
 		attach.click();
 		StringSelection stringselect = new StringSelection("\"C:\\Users\\Devika Vysakh\\Downloads\\Manual Testing.pdf\"");
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringselect,null);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringselect,null);//copy file to system keyboard
 		Robot robot = new Robot();
 		robot.delay(1000);
-		robot.keyPress(KeyEvent.VK_CONTROL);
-		robot.keyPress(KeyEvent.VK_V);
-		robot.keyRelease(KeyEvent.VK_CONTROL);
-		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyPress(KeyEvent.VK_CONTROL);//click ctrl
+		robot.keyPress(KeyEvent.VK_V);// click v
+		robot.keyRelease(KeyEvent.VK_CONTROL); //release control
+		robot.keyPress(KeyEvent.VK_ENTER); //
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		
 		
